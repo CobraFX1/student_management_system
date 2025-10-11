@@ -8,3 +8,46 @@ DAY 1 - SETUP NOTES
 - phpMyAdmin working
 - Project folder created: C:\student_management_system
 - Tested Node.js environment
+
+DAY 2 - PROJECT SETUP & BACKEND INITIALIZATION
+----------------------------------------------
+• Initialized Git repository using: git init
+• Created .gitignore file to exclude node_modules, logs, and environment files.
+• Made initial commit: "Initial project setup - folder structure and environment ready."
+• Created GitHub repository and linked it to local project using:
+    git remote add origin https://github.com/<username>/student_management_system.git
+• Verified successful push to GitHub with git status.
+
+• Inside the backend folder:
+    - Initialized Node.js project with: npm init -y
+    - Installed Express for building REST APIs: npm install express
+    - Installed Nodemon for automatic server restarts: npm install --save-dev nodemon
+    - Created server.js file and wrote base Express setup.
+
+• Configured package.json scripts:
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+
+• Successfully ran backend server using:
+    npm run dev
+  Confirmed output:
+    "Server is running on http://localhost:5000"
+
+• Installed MySQL driver (mysql2) using:
+    npm install mysql2
+
+• Created database named 'student_management' in phpMyAdmin.
+• Created db.js file to establish connection between Node.js and MySQL.
+• Linked db.js to server.js and confirmed successful connection:
+    ✅ Connected to MySQL database.
+    ✅ Server is running on http://localhost:5000
+
+• Tools used today:
+    - Command Prompt for backend commands
+    - VS Code for editing files
+    - XAMPP for Apache and MySQL services
+
+Notes:
+- Encountered npm script warning initially (fixed by updating package.json).
+- Encountered CRLF/LF warning during git add (harmless, ignored).
+- Could not use VS Code terminal due to permission issues; used CMD instead.
