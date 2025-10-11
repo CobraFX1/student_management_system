@@ -1,0 +1,10 @@
+DAY 1 - SETUP NOTES
+-------------------
+- Node.js version: v22.20.0
+- npm version: 10.9.3
+- Git installed and verified
+- VS Code installed
+- Apache + MySQL (XAMPP) running successfully
+- phpMyAdmin working
+- Project folder created: C:\student_management_system
+- Tested Node.js environment
