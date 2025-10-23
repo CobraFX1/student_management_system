@@ -1,20 +1,18 @@
-const mysql = require('mysql2');
+import mysql from 'mysql2';
 
-// Create a connection to MySQL
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '', // leave empty for XAMPP default
+  password: 'stephen@A1',
   database: 'student_management'
 });
 
-// Connect to MySQL
-connection.connect((err) => {
+db.connect(err => {
   if (err) {
-    console.error('❌ Database connection failed:', err.message);
+    console.error('Database connection failed:', err);
     return;
   }
-  console.log('✅ Connected to MySQL database.');
+  console.log('Connected to MySQL database.');
 });
 
-module.exports = connection;
+export default db;
