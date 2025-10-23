@@ -51,3 +51,30 @@ Notes:
 - Encountered npm script warning initially (fixed by updating package.json).
 - Encountered CRLF/LF warning during git add (harmless, ignored).
 - Could not use VS Code terminal due to permission issues; used CMD instead.
+
+DAY 2 NOTES — Backend Setup
+---------------------------
+- Initialized backend with npm
+- Installed express, mysql2, nodemon
+- Created db.js for MySQL connection
+- Verified MySQL Workbench connection
+- Created student_management database
+- Confirmed backend connection (Connected to MySQL)
+- Added folder structure (routes, controllers, models)
+- Tested Express routes (/ and /test-db)
+- Git committed all changes
+
+Next: Day 3 — Database schema and CRUD routes
+
+DAY 3 NOTES — Database Schema and CRUD
+-------------------------------------
+- Created tables (students, courses, enrollments)
+- Added MVC structure (models/controllers/routes)
+- Implemented CRUD endpoints for students
+- Tested routes using Postman
+- Backend now supports full REST operations
+
+
+Where I stopped
+I am testing the databases that i inputted 
+I have tested student, faculty and department, the rest still need checkups
