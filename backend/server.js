@@ -1,9 +1,12 @@
 import express from 'express';
 import db from './db.js';
+import studentRoutes from './routes/students.js';
+
+
 
 const app = express();
 app.use(express.json());
-
+app.use('/api/students', studentRoutes);
 // Test route
 app.get('/', (req, res) => {
   res.send('Backend server is running...');
